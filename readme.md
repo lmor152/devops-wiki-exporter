@@ -1,6 +1,6 @@
 # Wiki Exporter
 
-Use this to export your DevOps wikis to HTML
+Use this to export your DevOps wikis to a single HTML file
 
 1. Clone this repo
 1. Create virtual environment:

@@ -47,7 +47,7 @@ def main(arguments):
     for f,l in markdown_files:
 
         #read the raw markdown
-        doc_text = open(f,'r').read()
+        doc_text = open(f,'r', encoding='utf-8').read()
 
         # Add title for the page name 
         if args.file_headers:
@@ -88,7 +88,7 @@ def main(arguments):
         template = template.read()
         html = template.replace('BODYGOESHERE',html)
 
-    with open(args.output, 'w') as f:
+    with open(args.output, 'w', encoding='utf-8') as f:
         f.write(html)
 
     print(f'Success: exported to {args.output}')
